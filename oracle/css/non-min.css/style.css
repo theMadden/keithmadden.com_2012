@@ -1,0 +1,559 @@
+@font-face {
+	font-family: 'My Underwood';
+	src: url('fonts/MyUnderwood.ttf');
+}
+@font-face {
+	font-family: 'Fabrica';
+	src: url('fonts/Fabrica.otf');
+}
+
+
+
+html, body {
+  margin: 0px;
+}
+
+p {
+	font-family:'Courier New', Courier, sans-serif;
+}
+
+#info-pane p, #iframe li {
+	font-family:Fabrica;
+}
+
+h1, h2 {
+	font-family:'My Underwood';
+}
+
+.ui-page a {
+	text-decoration:none;
+	color:#333 !important;
+}
+
+header{
+	height:110px;
+	background-image:url('../img/PenLine-1000.png');
+    background-position:50% 100%;
+	background-repeat: no-repeat;
+	position:relative;
+	margin: 0 auto;
+	max-width:1600px;
+	min-width:800px;
+	z-index:2;
+}
+
+	header img {
+		margin-left:10px;
+		margin-top:5px;
+	}
+	
+	header a {
+		padding-right:15px;
+	}
+	
+	header nav {
+		font-size:16pt;
+		font-family:'My Underwood',Arial;
+		height:105px;
+		width:300px;
+		position:absolute;
+		bottom:10px;
+		right:20px;
+		background-image:url('../img/hashtag.png');
+		background-position:50% 0%;
+		background-repeat: no-repeat;
+	}
+
+	header nav p {
+		position:absolute;
+		bottom:0;
+		display:block-inline;
+	}
+	
+#wrapper, #about-wrap {				
+	position:relative;
+	margin:0 auto;
+	width:900px;
+	margin-bottom:25px;
+	margin-top:15px;
+}
+
+#wrapper {
+	height:800px;
+}
+
+#about-wrap {
+	height:1000px;
+}
+
+#frame-bg {
+  margin:0 auto;
+  width:100%;
+  height: 400px;
+  z-index: 0;
+  top: 168px;
+  position:absolute;
+  padding:1px;
+}
+	
+	#frame-bg #right-bg  {
+	  float:right;
+	  display:none;
+	}
+
+#overframe {
+  margin:0 auto;
+  width: 900px;
+  height: 670px;
+  z-index: 5;
+  top: 0;
+  position:absolute;
+  overflow:hidden;
+  overflow-x:hidden;
+}
+
+	#overframe #cloud {
+		display:none;
+	}
+	
+	#overframe #tenticles-black {
+		position:absolute;
+		left:10px;
+		top:-50px;
+
+	}
+	
+	#overframe #orc {
+		position:absolute;
+		left:0;
+		bottom:205px;
+	}
+	
+	#overframe #ninja {
+		position:absolute;
+		right:200px;
+		bottom:200px;
+	}
+	
+	#overframe #oracle-man-black {
+		position:absolute;
+		margin-top: 55px;
+		margin-left: 11px;
+	}
+	
+	#overframe #zombie {
+		position:absolute;
+		top:-10px;
+		left:2px;
+
+	}
+	
+#iframe {
+  border:solid black 1px;
+  margin:0 auto;
+  width: 900px;
+  height: 400px;
+  z-index: 1;
+  top: 40px;
+  position:absolute;
+  -o-border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+  -moz-box-shadow: inset 0px 0px 2px 2px #888;
+  -webkit-box-shadow: inset 0px 0px 2px 2px #888;
+  box-shadow: inset 0px 0px 2px 2px #888;
+  overflow-x:hidden;
+}
+	
+	#iframe #result-pane {
+		margin-top:25px;
+		
+		margin-left: 20px;
+		width:600px;
+		height:350px;
+	}
+	
+		#iframe #result-pane h1 {
+			font-size:24pt;
+			text-align:center;
+			font-family:'My Underwood';
+			margin:5px;
+			margin-top:100px;
+			margin-bottom:100px;
+		}
+		
+		#result-pane img {
+			float:left;
+		}
+		
+	#iframe #result-list {
+		float:left;
+		list-style-type:none;
+		margin:5px;
+		margin-top:100px;
+		margin-bottom:100px;
+	}
+		
+	#iframe form{
+		width:600px;
+		margin:10px;
+		background-image:url('../img/CloudLong.png');
+		background-repeat:no-repeat;
+		background-position:95% 95%;
+	}
+	
+#long-list {
+  position: absolute;
+  margin:0 auto;
+  height:450px;
+  width:150px;
+  top:13px;
+  right: 70px;
+  z-index: 8;
+  float:right;
+  background-color:#fff;
+  -o-border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  border:solid #888 1px;
+  padding:5px;
+  -moz-box-shadow: 0px 1px 4px 0px #888;
+  -webkit-box-shadow: 0px 1px 4px 0px #888;
+  box-shadow: 0px 1px 4px 0px #888;
+}
+
+	#long-list ul:first-child {
+		margin-top:20px;
+	}
+	
+	#long-list ul li {
+		margin: 0 auto;
+		margin-top:10px;
+		margin-bottom:10px;
+		width:120px;
+		height:85px;
+		-moz-box-shadow: 0px 1px 4px 0px #888;
+		-webkit-box-shadow: 0px 1px 4px 0px #888;
+		box-shadow: 0px 1px 4px 0px #888;
+		background-repeat:no-repeat;
+		background-position:0% 0%;
+	}
+
+	#long-list ul li:hover {
+		background-image:url('../img/buttons/black.png');
+		background-repeat:no-repeat;
+		background-position:0% 0%;
+	}
+
+	#long-list ul li:active {
+		background-image:url('../img/buttons/red-b.png');
+		background-repeat:no-repeat;
+		background-position:0% 0%;
+	}
+	
+	#long-list img {
+		margin-top:20px;
+	}
+
+	#long-list a {
+		width:120px;
+		height:85px;
+	}
+		
+#under-list, #mascot-list {
+  position: absolute;
+  margin:0 auto;
+  height:450px;
+  width:150px;
+  top:13px;
+  right: 70px;
+  float:right;
+  background-color:#fff;
+  -o-border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:solid #888 1px;
+  padding:5px;
+  overflow:hidden;
+  overflow-x:visible;
+  
+}
+
+#under-list {
+	z-index:7;
+}
+
+	#under-list img {
+		height:50px;
+	}
+
+	#mascot-list img {
+		height:70px;
+	}
+	
+#mascot-list  {
+	z-index:6;
+}
+
+.no-style-center-ul{
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+	margin-top:5px;
+}
+
+	.no-style-center-ul .left-li{
+		text-align:left;
+		margin-left:20px;
+	}
+
+	.no-style-center-ul .right-li{
+		text-align:right;
+		margin-right:20px;
+	}
+
+.video-player {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+#info-pane {
+
+	position:absolute;
+	bottom:0;
+	right:5px;
+	background-color:#d2e5e4;
+	width:625px;
+	height:301px;
+	margin:0 auto;
+	margin-bottom:25px;
+	z-index:1;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow: 0px 2px 5px 0px #888;
+	-webkit-box-shadow: 0px 2px 2px 0px #888;
+	box-shadow: 0px 2px 5px 0px #888;
+}
+
+	#info-pane h1,h2,p {
+		margin:5px;
+	}
+
+	#info-pane h1 {
+		font-size:32pt;
+		font-family:'My Underwood', Rockwell, sans-serif;
+		margin:5px;
+		margin-bottom:5px;
+	}
+	
+	#info-pane p{
+		margin:10px;
+		letter-spacing:0.1em;
+		line-height:1.1em;
+	}
+	
+	#info-pane #quiz-details {
+		text-align:center;
+			font-family: 'My Underwood';
+			font-size:18pt;
+			margin-bottom:30px;
+		}
+	
+	.fb-like {
+		float:right;
+	}
+	
+.popup-button {
+	float:right;
+	background-image:url('../img/32/play.png');
+}
+	
+#title-choice {
+	margin-left: 10px;
+	display:none;
+}
+
+#bad-choice {
+	margin-left: 10px;
+	display:none;
+}
+
+.choice{
+	width:275px;
+}
+
+#iframe .ui-grid-a {
+	width:600px;
+}
+
+#iframe .ui-block-a {
+	width:250px;
+}
+
+#iframe .ui-block-b {
+	width:350px;
+}
+
+#expert-profile {
+	margin:10px;
+	margin-left:15px;
+}
+
+	#expert-profile h1 {
+		font-family:'My Underwood', Rockwell, san-serif;
+		font-size:24pt;
+		margin-bottom:5px;
+		
+	}
+	
+	#expert-profile h2 {
+		font-size:21pt;
+		margin-bottom:15px;
+	}
+
+	#expert-profile li {
+		margin:8px;
+	}
+	
+	#expert-profile dt {
+		font-weight:bold;
+	}
+	
+#expert-photo, #mascot-photo {
+	width:187px;
+	height:260px;
+	border:solid 1px #333;
+	-o-border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	float:left;
+	margin-right:20px;
+}
+
+#expert-sm-links {
+	margin:15px;
+}
+
+	#expert-sm-links a {
+		margin:5px;
+	}
+
+#expert-button {
+	margin:10px;
+	width:640px;
+}
+
+#twitter-search {
+	position:absolute;
+	bottom:0;
+	left:10px;
+	margin:0 auto;
+	margin-bottom:25px;
+	z-index:1;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow: 0px 2px 5px 0px #888;
+	-webkit-box-shadow: 0px 2px 5px 0px #888;
+	box-shadow: 0px 2px 5px 0px #888;
+}
+
+#story{
+	margin-top:50px;
+	border-top:solid 1px #000;
+	width:100%;
+	height:250px;
+	-moz-box-shadow: inset 0px 2px 5px -2px #888;
+	-webkit-box-shadow: inset 0px 2px 5px -2px #888;
+	box-shadow: inset 0px 2px 5px -2px #888;
+	text-align:center;
+	margin:0 auto;
+}
+
+.article {
+	display:inline-block;
+	width:250px;
+	height:200px;
+	margin:25px;
+}
+
+	.article h2 {
+		font-size:14pt;
+	}
+
+	.article p {
+		font-size:10pt;
+		margin-top:20px;
+		margin:10px;
+		text-align:justify;
+	}
+
+
+
+#social-media {
+	margin-top:15px;
+	margin-right:36px;
+	bottom:5px;
+	width:235px;
+	padding: 3px;
+	left:5px;
+	position:absolute;
+	-moz-box-shadow: 0px 0px 5px 0px #888;
+	-webkit-box-shadow: 0px 0px 5px 0px #888;
+	box-shadow: 0px 0px 5px 0px #888;
+}
+
+.ui-icon-cloud {
+		background-image: url("../img/32/play.png") !important;
+		background-size: 18px 18px !important;
+	}
+	
+.about {
+	margin-top:25px;
+}
+
+.about h1{
+	font-family:'My Underwood';
+	font-size:18pt;
+	color:red;
+	margin-bottom:15px;
+}
+
+.about p {
+	margin-bottom:30px;
+	margin-left:10px;
+	font-size:12.5pt;
+}
+	#team {
+		font-family:'Courier New';
+	}
+
+	 #team  tr {
+		width:900px;
+	}
+
+	 #team td {
+		width:50%;
+		padding:5px;
+	}
+
+	#team h1 {
+		margin-top:10px;
+		margin-bottom:5px;
+	}
+
+#contact-form {
+	border:1px solid;
+	margin:auto;
+	margin-top:5px;
+	padding:10px;
+	width:500px;
+}

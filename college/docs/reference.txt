@@ -1,0 +1,34 @@
+REFERENCE DOCUMENT - KEITH MADDEN - INTERNET DEVELOPMENT ASSIGNMENT - DUE DATE: 16/03/12
+
+
+	This site was built for best use in the Chrome browser, but was also tested in Firefox. 
+	The below site's were used extensively in researching functions and solutions for this assignment:
+
+
+www.php.net - particularly the manual subsection: www.php.net/manual/en/
+
+www.w3schools - PHP, AJAX, JSON and other tutorial and reference pages used.
+
+http://dochub.io - An online reference/API for primary web languages. Those sections used on this site were: HTML, CSS, JavaScript, DOM, and PHP. Python and jQuery sections are available on dochub, but were unused.
+
+www.stackoverflow.com -  Although no code was taken from stackoverflow, the logic in several problem solutions was crucial in overcoming difficulites encountered. (Used often in conjunction with pph.net)
+
+
+	External Materials Used: 
+
+
+The code used in a number of the site's pages to query the database lifts it's connect and disconnect functions wholesale from the W3Schhols tutorial on the subject (www.w3schools.com/php/php_mysql_connect.asp).
+
+The AJAX code for creating and sending an XMLHttpRequest to the database(student.php), as noted in the source code, was taken from the W3Schools tutorial on AJAX (www.w3schools.com/php/php_ajax_database.asp).
+
+The use of the $_GET["q"] action in moduleDisp.php & moduleEdit.php was also inspired by the above tutorial but was ultimately implemented to different ends.
+
+An email validation function (form.php) was taken from Dr Charlie Cullen's Lecture Notes (Internet Development - Lecture 5). The function cleans up an inputted email address (using the trim() and stripslashes() functions) and uses a regular expression to check for invalid special characters in an email address. The function that appears in this assignment was simplified somewhat from the original version.
+
+A css reset stylesheet was used on all pages of the site. This reset, used in conjunction with an original stylesheet, was authored by Eric Meyer, and can be found at http://meyerweb.com/eric/tools/css/reset/ It is used in it's unedited form.
+
+A welcome note used on the site's home page (index.php) was taken from the DIT homepage (www.dit.ie).
+
+
+
+Keith Madden.

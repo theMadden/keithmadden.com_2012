@@ -1,0 +1,124 @@
+
+		body{
+			/*background-color: #000;
+			background-image: url('../img/background.jpg'); */
+			color:#fff;
+			font-family: 'Droid Sans';
+			font-size: 1em;
+			width: 100%;
+
+			/* CSS3 Pattern - Credit: Atle Mo, Lea Verou http://lea.verou.me/css3patterns/ */
+			background:
+			radial-gradient(black 15%, transparent 16%) 0 0,
+			radial-gradient(black 15%, transparent 16%) 8px 8px,
+			radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+			radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+			background-color:#282828;
+			background-size:16px 16px;
+
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color:#ccc;
+			transition: color 1s linear;
+			-moz-transition: color 1s linear; /* Firefox 4 */
+			-webkit-transition: color 1s linear; /* Safari and Chrome */
+			-o-transition: color 1s linear; /* Opera */
+		}
+
+		nav a {
+			font-weight: bold;
+		}
+
+		h1, h2, h3 {
+			text-shadow:0.05em 0.05em 0.05em #333;  /* 1em=5,2.5 respectively  */
+		}
+
+		h1{
+			font-family: Lobster;
+			font-size: 4.5em;
+			line-height: 90%;
+
+		}
+
+		h2{
+			font-weight: 400;
+			font-size: 2em;
+		}
+
+		#wrap {
+			position: absolute;
+			width: 50%; /* 600/1200 */
+			height: 50%;
+		}
+
+		#crest {
+			width:50%;
+			text-align: center;
+		}
+
+		#text {
+			width: 50%;
+		}
+
+		.screengrab {
+			width:80%;
+			border-radius: 5px;
+			border: 2px solid #333;
+			margin-top: 2.5em;
+		}
+
+		@media all and (min-width:1325px) {
+
+			h2, p {
+			}
+
+			#wrap {
+				width: 80%;
+				top: 25%;
+				left: 5%;
+			}
+
+			#crest{
+				float: left;
+			}
+
+			#text {
+				float: right;
+			}
+		}
+
+		@media all and (max-width:1325px) {
+
+			h2 {
+				line-height: 100%;
+			}
+
+			#wrap {
+				width:90%;
+				left: 5%;
+			}
+
+			#crest{
+				width: 100%;
+				margin:0 auto;
+			}
+
+			#text {
+				width: 100%;
+				margin:0 auto;
+				text-align: center;
+			}
+		}
+
+		@media all and (max-width:550px) {
+			#wrap {
+				width: 100%;
+				left: 0%;
+			}
+		}
